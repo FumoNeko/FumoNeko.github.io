@@ -10,13 +10,25 @@
 <p>Hopefully it isn't too buggy and it works. This project is only intended as a small scale test, and is welcome to be picked up to be turned into something bigger.</p>
     </div>
   
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.19.0/firebase-app.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA3JzoKEdzXGOPnNR6z6prN3D8HtAfFjkI",
+    authDomain: "market76-1a288.firebaseapp.com",
+    databaseURL: "https://market76-1a288.firebaseio.com",
+    projectId: "market76-1a288",
+    storageBucket: "market76-1a288.appspot.com",
+    messagingSenderId: "670423435545",
+    appId: "1:670423435545:web:194d2ff9edafa3e446dd88"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
