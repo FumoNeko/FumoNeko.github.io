@@ -83,6 +83,6 @@ p:last-child:after {
 }
 
 
-table, td {
+table.screen, td, th {
   border: 1px solid green;
 }
