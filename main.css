@@ -81,3 +81,8 @@ p:last-child:after {
     opacity:0;
   }
 }
+
+
+table, td {
+  border: 1px solid green;
+}
