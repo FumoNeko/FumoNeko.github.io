@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <html>
-    <head>   
+    <head>
       <link rel="stylesheet" href="main.css">
       <title>Enclave Tradehub</title>
     </head>
@@ -11,6 +11,7 @@
           <tr>
             <th>Legendary</th>
             <th>Item</th>
+            <th>Level</th>
             <th>Legendary Effects</th>
             <th>Price</th>
             <th>Quantity</th>
@@ -20,6 +21,7 @@
           <tr>
             <td>Yes</td>
             <td>Bloody Explosive Handmade</td>
+            <td>45</td>
             <td>Bloodied<br>Explosive<br>25% Faster Firing Rate</td>
             <td>30,000 Caps</td>
             <td>x1</td>
@@ -27,11 +29,31 @@
             <td>Faust</td>
           </tr>
         </table>
+        <label>Legendary: </label>
+          <input type="text" name="Legendary" id="Legendary"><br>
+          <label>Item: </label>
+          <input type="text" name="Item" id="Item"><br>
+          <label>Level: </label>
+          <input type="text" name="Level" id="Level">
+          <label>Legendary Effects: </label>
+          <input type="text" name="legendEffects" id="legendEffects">
+          <label>Price: </label>
+          <input type="text" name="Price" id="Price">
+          <label>Quantity: </label>
+          <input type="text" name="Quantity" id="Quantity">
+          <label>Platform: </label>
+          <input type="text" name="Platform" id="Platform">
+          <label>Seller: </label>
+          <input type="text" name="Seller" id="Seller">
+          <input type="submit" value="Add" onclick="add()">
+        <script type="text/javascript">
+        </script>
         <h1>Apparel</h1>
         <table>
           <tr>
             <th>Legendary</th>
             <th>Item</th>
+            <th>Level</th>
             <th>Legendary Effects</th>
             <th>Price</th>
             <th>Quantity</th>
@@ -104,6 +126,7 @@
           <tr>
             <th>Legendary</th>
             <th>Item</th>
+            <th>Level</th>
             <th>Legendary Effects</th>
             <th>Price</th>
             <th>Quantity</th>
