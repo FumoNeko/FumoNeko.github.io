@@ -49,6 +49,14 @@
         <script type="text/javascript">
         function myFunction() {
           var table = document.getElementById("tableWeapons");
+          var Legendary = document.getElementById("Legendary");
+          var Item = document.getElementById("Item");
+          var Level = document.getElementById("Level");
+          var legendEffects = document.getElementById("legendEffects");
+          var Price = document.getElementById("Price");
+          var Quantity = document.getElementById("Quantity");
+          var Platform = document.getElementById("Platform");
+          var Seller = document.getElementById("Seller");
           var row = table.insertRow(1);
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
@@ -58,14 +66,14 @@
           var cell6 = row.insertCell(5);
           var cell7 = row.insertCell(6);
           var cell8 = row.insertCell(7);
-          cell1.innerHTML = "NEW CELL 1"
-          cell2.innerHTML = "NEW CELL 2"
-          cell3.innerHTML = "NEW CELL 3"
-          cell4.innerHTML = "NEW CELL 4"
-          cell5.innerHTML = "NEW CELL 5"
-          cell6.innerHTML = "NEW CELL 6"
-          cell7.innerHTML = "NEW CELL 7"
-          cell8.innerHTML = "NEW CELL 8"
+          cell1.innerHTML = Legendary.value;
+          cell2.innerHTML = "NEW CELL 2";
+          cell3.innerHTML = "NEW CELL 3";
+          cell4.innerHTML = "NEW CELL 4";
+          cell5.innerHTML = "NEW CELL 5";
+          cell6.innerHTML = "NEW CELL 6";
+          cell7.innerHTML = "NEW CELL 7";
+          cell8.innerHTML = "NEW CELL 8";
         }
         </script>
         <h1>Apparel</h1>
