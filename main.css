@@ -86,3 +86,9 @@ p:last-child:after {
 table, td, th {
   border: 1px solid green;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
