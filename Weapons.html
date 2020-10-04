@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="main.css">
+      <title>Enclave Tradehub</title>
+    </head>
+    <body>
+      <div class = "screen" style="height:970px;overflow:auto">
+        <h1>Weapons</h1>
+        <table id="tableWeapons">
+          <tr>
+            <th>Legendary</th>
+            <th>Item</th>
+            <th>Level</th>
+            <th>Legendary Effects</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Platform</th>
+            <th>Seller</th>
+          </tr>
+          <tr>
+            <td>Yes</td>
+            <td>Bloody Explosive Handmade</td>
+            <td>45</td>
+            <td>Bloodied<br>Explosive<br>25% Faster Firing Rate</td>
+            <td>30,000 Caps</td>
+            <td>x1</td>
+            <td>PS4</td>
+            <td>Faust</td>
+          </tr>
+        </table>
+        <label>Legendary: </label>
+          <input type="text" name="Legendary" id="Legendary"><br>
+          <label>Item: </label>
+          <input type="text" name="Item" id="Item"><br>
+          <label>Level: </label>
+          <input type="text" name="Level" id="Level"><br>
+          <label>Legendary Effects: </label>
+          <input type="text" name="legendEffects" id="legendEffects"><br>
+          <label>Price: </label>
+          <input type="text" name="Price" id="Price"><br>
+          <label>Quantity: </label>
+          <input type="text" name="Quantity" id="Quantity"><br>
+          <label>Platform: </label>
+          <input type="text" name="Platform" id="Platform"><br>
+          <label>Seller: </label>
+          <input type="text" name="Seller" id="Seller"><br>
+          <button onclick="myFunction()">Add</button>
+        <script type="text/javascript">
+        function myFunction() {
+          var table = document.getElementById("tableWeapons");
+          var Legendary = document.getElementById("Legendary");
+          var Item = document.getElementById("Item");
+          var Level = document.getElementById("Level");
+          var legendEffects = document.getElementById("legendEffects");
+          var Price = document.getElementById("Price");
+          var Quantity = document.getElementById("Quantity");
+          var Platform = document.getElementById("Platform");
+          var Seller = document.getElementById("Seller");
+          var row = table.insertRow(1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
+          var cell6 = row.insertCell(5);
+          var cell7 = row.insertCell(6);
+          var cell8 = row.insertCell(7);
+          cell1.innerHTML = Legendary.value;
+          cell2.innerHTML = Item.value;
+          cell3.innerHTML = Level.value;
+          cell4.innerHTML = legendEffects.value;
+          cell5.innerHTML = Price.value;
+          cell6.innerHTML = Quantity.value;
+          cell7.innerHTML = Platform.value;
+          cell8.innerHTML = Seller.value;
+        }
+        </script>
