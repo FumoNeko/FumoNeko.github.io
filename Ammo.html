@@ -6,20 +6,20 @@
     </head>
     <body>
       <div class = "screen" style="height:970px;overflow:auto">
-        <h1>Miscellaneous</h1>
-        <table id="tableMisc">
+        <h1>Ammunition</h1>
+        <table id="tableAmmo">
           <tr>
-            <th>Item</th>
-            <th>Price</th>
+            <th>Type</th>
+            <th>Price per unit</th>
             <th>Quantity</th>
             <th>Platform</th>
             <th>Seller</th>
           </tr>
         </table>
-        <label>Item: </label>
-          <input type="text" name="Item" id="Item"><br>
-        <label>Price: </label>
-          <input type="text" name="Price" id="Price"><br>
+        <label>Type: </label>
+          <input type="text" name="Type" id="Type"><br>
+        <label>Price per unit: </label>
+          <input type="text" name="Price per unit" id="Ppu"><br>
         <label>Quantity: </label>
           <input type="text" name="Quantity" id="Quantity"><br>
         <label>Platform: </label>
@@ -29,9 +29,9 @@
           <button onclick="myFunction()">Add</button>
         <script type="text/javascript">
         function myFunction() {
-          var table = document.getElementById("tableMisc");
-          var Item = document.getElementById("Item");
-          var Price = document.getElementById("Price");
+          var table = document.getElementById("tableAmmo");
+          var Type = document.getElementById("Type");
+          var Ppu = document.getElementById("Ppu");
           var Quantity = document.getElementById("Quantity");
           var Platform = document.getElementById("Platform");
           var Seller = document.getElementById("Seller");
@@ -41,8 +41,8 @@
           var cell3 = row.insertCell(2);
           var cell4 = row.insertCell(3);
           var cell5 = row.insertCell(4);
-          cell1.innerHTML = Item.value;
-          cell2.innerHTML = Price.value;
+          cell1.innerHTML = Type.value;
+          cell2.innerHTML = Ppu.value;
           cell3.innerHTML = Quantity.value;
           cell4.innerHTML = Platform.value;
           cell5.innerHTML = Seller.value;
